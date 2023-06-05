@@ -1,0 +1,74 @@
+@use "../tokens/tokens" as tokens;
+@use "../mixins/mixins" as mixins;
+
+#work {
+  grid-area: work;
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 4rem;
+
+  @media (min-width: tokens.$bp-desktop) {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+  }
+}
+
+.project-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.quote {
+  background-color: tokens.$clr-grey-100;
+  padding: 1.5rem 1rem;
+  border-radius: 0.625rem;
+
+  p {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+}
+
+.citation {
+  color: tokens.$clr-grey-500;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  font-style: normal;
+}
+
+.project-card {
+  display: flex;
+  flex: 1;
+  background: center / cover no-repeat url("/assets/Project.png");
+  border-radius: 0.625rem;
+  min-height: 32.5rem;
+
+  @media (min-width: tokens.$bp-desktop) {
+    min-height: 30rem;
+  }
+}
+
+.project-content {
+  align-self: flex-end;
+  padding: 0 1rem 1.5rem 1rem;
+}
+
+.project-heading {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.project-description {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  color: #e4e4e4;
+}
+
+.project-link {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+}

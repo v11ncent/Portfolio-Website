@@ -1,0 +1,39 @@
+@use "../tokens/tokens" as tokens;
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  padding: 1.5rem 1rem;
+  font-family: tokens.$ff-main;
+
+  @media (min-width: tokens.$bp-desktop) {
+    height: 100%;
+  }
+}
+
+.grid {
+  max-width: 43.75rem;
+  margin: 0 auto;
+
+  @media (min-width: tokens.$bp-desktop) {
+    display: grid;
+    grid-template-areas: "hero work work";
+    gap: 1.5rem;
+    height: 100%;
+    max-width: 100%;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
