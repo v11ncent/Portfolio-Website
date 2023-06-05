@@ -42,16 +42,15 @@
   flex: 1;
   background: center / cover no-repeat url("/assets/Project.png");
   border-radius: 0.625rem;
-  min-height: 32.5rem;
 
-  @media (min-width: tokens.$bp-desktop) {
-    min-height: 30rem;
+  @media (max-width: tokens.$bp-desktop) {
+    min-height: 32.5rem;
   }
 }
 
 .project-content {
   align-self: flex-end;
-  padding: 0 1rem 1.5rem 1rem;
+  padding: 1.5rem;
 }
 
 .project-heading {
