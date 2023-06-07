@@ -47,16 +47,12 @@
 }
 
 .project-image {
+  display: none;
   background: center / contain no-repeat url("/assets/Project.png");
   height: 100%;
   width: 100%;
-  min-height: 20rem;
   border-radius: 0.625rem;
   padding: 1.5rem;
-
-  @media (min-width: tokens.$bp-desktop) {
-    min-height: 20rem;
-  }
 }
 
 .project-image.alternate {
@@ -65,6 +61,7 @@
 
 .project-content {
   padding: 1.5rem;
+  margin-top: auto;
 }
 
 .project-heading {
