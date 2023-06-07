@@ -23,6 +23,7 @@
   background-color: tokens.$clr-grey-100;
   padding: 1.5rem 1rem;
   border-radius: 0.625rem;
+  border: 1px solid lightgrey;
 
   p {
     margin-bottom: 1rem;
@@ -39,35 +40,48 @@
 
 .project-card {
   display: flex;
+  flex-direction: column;
   flex: 1;
-  background: center / cover no-repeat url("/assets/Project.png");
   border-radius: 0.625rem;
+  border: 1px solid lightgrey;
+}
 
-  @media (max-width: tokens.$bp-desktop) {
-    min-height: 32.5rem;
+.project-image {
+  background: center / contain no-repeat url("/assets/Project.png");
+  height: 100%;
+  width: 100%;
+  min-height: 20rem;
+  border-radius: 0.625rem;
+  padding: 1.5rem;
+
+  @media (min-width: tokens.$bp-desktop) {
+    min-height: 20rem;
   }
 }
 
+.project-image.alternate {
+  background: center / contain no-repeat url("/assets/Project.png");
+}
+
 .project-content {
-  align-self: flex-end;
   padding: 1.5rem;
 }
 
 .project-heading {
   margin-bottom: 1rem;
-  font-size: 1.5rem;
-  color: white;
+  font-size: 1.4rem;
+  color: #2c2c2c;
+  font-weight: 500;
 }
 
 .project-description {
   margin-bottom: 1rem;
   font-size: 1.25rem;
-  color: #e4e4e4;
+  color: tokens.$clr-grey-500;
 }
 
 .project-link {
   text-decoration: none;
   font-size: 1.25rem;
-  font-weight: bold;
-  color: white;
+  color: #2c2c2c;
 }

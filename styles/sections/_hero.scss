@@ -30,6 +30,7 @@
   margin-bottom: 3rem;
   font-size: 1.25rem;
   max-width: 70ch;
+  color: tokens.$clr-grey-500;
 }
 
 .primary-cta {
@@ -39,7 +40,7 @@
   padding: 1rem 2rem;
   color: white;
   font-size: 1.25rem;
-  font-weight: bold;
+  font-weight: 500;
   border-radius: 5px;
   background-color: tokens.$clr-primary;
   box-shadow: 0px 2px 4px #9bb7fe;
@@ -55,9 +56,8 @@
   display: block;
   color: black;
   font-size: 1.125rem;
-  font-weight: bold;
+  font-weight: 500;
   text-align: center;
-  text-decoration: none;
 
   @media (min-width: tokens.$bp-desktop) {
     text-align: left;
